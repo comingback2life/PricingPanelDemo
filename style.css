@@ -1,0 +1,218 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #45caff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+html {
+  box-sizing: border-box; /** When we set the width of the content it is going to factor in the border width*/
+  font-family: "Cairo", sans-serif;
+}
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.priceImage {
+  margin: 10px 10px;
+  max-width: 90%;
+}
+.priceHeader {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.featuresList {
+  margin: 50px 0 25px;
+  color: #016ff9;
+}
+.featureListItems {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 15px;
+  border-top: 1px solid #b1f1ff;
+}
+.featureListItems:last-child {
+  border-bottom: 1 px solid #b1f1ff;
+}
+.freeItem {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+.priceButton {
+  border: 1px solid #9df1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 300ms ease-in-out;
+}
+.priceButton:hover,
+.priceButton:focus {
+  background-color: #e1f1ff;
+}
+.priceButton.isFeatured {
+  background-color: #48aaff;
+  color: white;
+}
+.priceButton.priceButton.isFeatured:hover,
+.priceButton.priceButton.isFeatured:focus {
+  background-color: #279aff;
+}
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 15px 15px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
